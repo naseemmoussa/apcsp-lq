@@ -9,8 +9,8 @@ def threeeven(list)
     return false
 end
 
-puts threeeven([2,1,3,5])
-puts threeeven([2,4,12,5])
+#puts threeeven([2,1,3,5])
+#puts threeeven([2,4,12,5])
 
 def biggertwo(list1,list2)
     sum1 = 0
@@ -28,11 +28,22 @@ def biggertwo(list1,list2)
     end
 end
 
-print biggertwo([1,2],[3,4])
-print biggertwo([1,7],[4,4])
+#print biggertwo([1,2],[3,4])
+#print biggertwo([1,7],[4,4])
+
+def seriesup(n)
+list = []
+    n.times do
+        list = list + list1
+        return list
+    end
+end
+
+print seriesup(1)
+puts ""
+print seriesup(2)
 
 
 
 
-
-
+    
