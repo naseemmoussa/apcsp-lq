@@ -32,11 +32,13 @@ end
 #print biggertwo([1,7],[4,4])
 
 def seriesup(n)
-list = []
-    n.times do
-        list = list + list1
-        return list
+list = [] 
+    n.times do |b|
+        b.times do |a|
+            list.push [b+1]
+        end
     end
+    return list
 end
 
 print seriesup(1)
