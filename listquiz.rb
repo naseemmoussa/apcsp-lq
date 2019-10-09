@@ -32,17 +32,16 @@ end
 #print biggertwo([1,7],[4,4])
 
 def seriesup(n)
-list = [] 
-    n.times do |b|
+    list = [] 
+    (n+1).times do |b| # added the +1 because this code needs to run 1 more time than the input
         b.times do |a|
-            list.push [b+1]
+            list.push(a+1) #changed the variable from b to a because it doesn't need to use the first variable, you have to use the second one to make it repeat from 1. Also, I had a space between the list.push and the (), so the push didnt even work with this space.
         end
     end
     return list
 end
 
 print seriesup(1)
-puts ""
 print seriesup(2)
 
 
